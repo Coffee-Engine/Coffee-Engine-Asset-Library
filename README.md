@@ -3,11 +3,11 @@ The Coffee Engine Asset Library is a library of default assets that can be fetch
 
 The different categories include
 
-Sprites
-Materials
-Enviornments
-Models
-Sounds
-Scripts
+Sprites,
+Materials,
+Enviornments,
+Models,
+Sounds,
+and Scripts
 
 If you are looking to contribute a plugin or an extension go to the plugins and extensions repository! (When its open)
