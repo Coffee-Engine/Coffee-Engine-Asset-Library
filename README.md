@@ -14,8 +14,8 @@ If you are looking to contribute a plugin or an extension go to the plugins and 
 
 ## Contributing
 Before you start you are going to want to make a folder for yourself in your own branch of the repo. If you are on the browser just create a new temporary text file.
-THen you can go to the "creators.json" file in the root and adding your name. In your creator folder add a file named index.json.
-You can view the creators/DavidC for an example creator folder.
+Then you can go to the "creators.json" file in the root and adding your name. In your creator folder add a file named "index.json".
+You can view the "creators/DavidC" for an example creator folder.
 ### Sprites
 Sprites can be in one of three formats “JPEG”, “PNG”, and “SVG”. sprites made without those formats will have to be converted. Sprites must also have an open license. For some good examples look at [OpenGameArt](https://opengameart.org/) for a good example of how this is done. Another thing to look out for is sprite-sheet data! If your sprite has sprite-sheet data make sure to include it by using JSON instead of just a string
 ```json
