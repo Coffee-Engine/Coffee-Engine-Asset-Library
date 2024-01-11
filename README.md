@@ -49,3 +49,15 @@ you would use
 ```js
 "materials/myName/myMaterial/material.json"
 ```
+
+### Models
+3D models can be added in the "DEA", or "OBJ" file formats. "OBJ" files can also have accomponying "MTL" files.
+Models have to be specified as a JSON object so we can store their materials and and model data together.
+In the example below "override1" is the name of a material in the model.
+```json
+{
+  "model":"models/myName/myModel/model.obj",
+  "MTL":"models/myName/myModel/model.mtl",
+  "override1":"models/myName/myModel/override.png"
+}
+```
