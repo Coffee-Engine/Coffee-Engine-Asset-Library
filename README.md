@@ -24,22 +24,28 @@ Sprites can be in one of three formats “JPEG”, “PNG”, and “SVG”. spr
 
 ### Materials
 Materials are slightly more complicated due to the nature of their creation. There are two formats materials a standard "JSON", and "STOREMAT",
-"STOREMAT" materials can just use the path to the file while "JSON" materials have to have some JSON data associated with them. The big signifigance between "JSON" and "STOREMAT" is that JSON does not store image and shader data directly into the file. First thing we want to establish is the shader and the path to the json data 
+"STOREMAT" materials can just use the path to the file while "JSON" materials have to have some JSON data associated with them. The big significance between "JSON" and "STOREMAT" is that JSON does not store image and shader data directly in the file. The first thing we want to establish is the shader and the path to the JSON data associated with the material.
 ```json
 {
   "material":"materials/myName/material.json",
   "shader":"materials/myName/shader.shader"
 }
 ```
-for each assigned uniform on a shader we can employ the tactic known as naming them
+for each assigned texture on a shader we can employ the tactic known as naming them.
 ```json
 {
   "material":"materials/myName/material.json",
   "shader":"materials/myName/shader.shader",
-  "uniforms" : {
-    "myUniform":[
-      1,0,1,1
-    ]
+  "textures" : {
+    "myTexture":"materials/myName/myTexture.png"
   }
 }
+```
+One good tip is to make a folder to store each material in so instead of using
+```js
+"materials/myName/material.json"
+```
+you would use
+```js
+"materials/myName/myMaterial/material.json"
 ```
