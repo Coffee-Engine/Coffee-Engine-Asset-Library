@@ -1,3 +1,6 @@
 {
-  "Tiramisu Tapioca":"sprites/DavidC/TiramisuA"
+  "Tiramisu Tapioca":{
+    "path":"sprites/DavidC/TiramisuA",
+    "tags":["character","cartoony"]
+  }
 }
