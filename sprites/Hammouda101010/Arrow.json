@@ -34,6 +34,8 @@
  },
  "meta": {
   "app": "https://github.com/LibreSprite/LibreSprite/",
+   "spritePath":"sprites/Hammouda101010/Arrow.png",
+  "sheetData":"sprites/Hammouda101010/Arrow.json"
   "version": "1.1-dev",
   "image": "C:\\Users\\ahmed\\OneDrive\\Images\\Game Assets\\Arrow.png",
   "format": "I8",
@@ -43,6 +45,11 @@
   ],
   "layers": [
    { "name": "Layer", "opacity": 255, "blendMode": "normal" }
+     
   ]
  }
+}
+{
+  "spritePath":"sprites/Hammouda101010/Arrow.png",
+  "sheetData":"sprites/Hammouda101010/Arrow.json"
 }
