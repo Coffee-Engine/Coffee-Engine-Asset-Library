@@ -24,45 +24,8 @@ Sprites can be in one of three formats “JPEG”, “PNG”, and “SVG”. Spr
 }
 ```
 
-### Materials
-Materials are slightly more complicated due to the nature of their creation. There are two formats materials a standard "JSON", and "STOREMAT",
-"STOREMAT" materials can just use the path to the file while "JSON" materials have to have some JSON data associated with them. The big significance between "JSON" and "STOREMAT" is that JSON does not store image and shader data directly in the file. The first thing we want to establish is the shader and the path to the JSON data associated with the material.
-```json
-{
-  "material":"materials/myName/material.json",
-  "shader":"materials/myName/shader.shader"
-}
-```
-for each assigned texture on a shader we can employ the tactic known as naming them.
-```json
-{
-  "material":"materials/myName/material.json",
-  "shader":"materials/myName/shader.shader",
-  "textures" : {
-    "myTexture":"materials/myName/myTexture.png"
-  }
-}
-```
-One good tip is to make a folder to store each material in so instead of using
-```js
-"materials/myName/material.json"
-```
-you would use
-```js
-"materials/myName/myMaterial/material.json"
-```
-
-### Models
-3D models can be added in the "DEA", "GLTF", or "OBJ" file formats. "OBJ" files can also have accompanying "MTL" files.
-Models have to be specified as a JSON object so we can store their materials and model data together.
-In the example below "override1" is the name of a material in the model.
-```json
-{
-  "model":"models/myName/myModel/model.obj",
-  "MTL":"models/myName/myModel/model.mtl",
-  "override1":"models/myName/myModel/override.json"
-}
-```
+###Materials
+Materials Models and Shaders are undergoing changes to comply with the Sectorz branch of coffee's material system as it is much more managable and simple.
 
 ### Sounds
 Sounds can be imported as "MP3", "WAV", or "OGG" file formats. You just have to specify the path to the sound file.
