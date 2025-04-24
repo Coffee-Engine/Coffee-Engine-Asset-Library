@@ -1,6 +1,5 @@
 {
   "DisplayName":"Stormy",
-  "WebsiteRef":"https://0Stormy.me"
-
-  "Sprites":true
+  "WebsiteRef":"https://0Stormy.me",
+  "About": "README.md"
 }
